@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE loggingSystem [
+        <!ELEMENT loggingSystem (expenses)*>
+        <!ELEMENT expenses (date|location|paymentMode|Services|totalExpenditure)*>
+        <!ATTLIST expenses
+                id CDATA #REQUIRED>
+        <!ELEMENT date (day|momth|year)*>
+        <!ELEMENT day (#PCDATA)>
+        <!ELEMENT momth (#PCDATA)>
+        <!ELEMENT year (#PCDATA)>
+        <!ELEMENT location (#PCDATA)>
+        <!ELEMENT paymentMode (visa|paypal|masterCard)*>
+        <!ELEMENT visa (#PCDATA)>
+        <!ELEMENT paypal (#PCDATA)>
+        <!ELEMENT masterCard (#PCDATA)>
+        <!ELEMENT Services (food|accomodation|gym)*>
+        <!ELEMENT food (#PCDATA)>
+        <!ATTLIST food
+                food_price CDATA #REQUIRED>
+        <!ELEMENT accomodation (#PCDATA)>
+        <!ATTLIST accomodation
+                acc_price CDATA #REQUIRED>
+        <!ELEMENT gym (#PCDATA)>
+        <!ATTLIST gym
+                gym_price CDATA #REQUIRED>
+        <!ELEMENT totalExpenditure (#PCDATA)>
+        ]>
+<loggingSystem>
+    <expenses id = "101">
+        <date>
+            <day></day>
+            <momth></momth>
+            <year></year>
+        </date>
+
+        <location>
+
+        </location>
+        <paymentMode>
+            <visa></visa>
+            <paypal></paypal>
+            <masterCard></masterCard>
+        </paymentMode>
+
+        <Services>
+            <food food_price = ""></food>
+            <accomodation acc_price = "" ></accomodation>
+            <gym gym_price = ""></gym>
+        </Services>
+        <totalExpenditure></totalExpenditure>
+    </expenses>
+</loggingSystem>

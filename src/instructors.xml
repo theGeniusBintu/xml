@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<instructorTeam>
+    <fullTime>
+        <name></name>
+        <title></title>
+        <address></address>
+        <contact></contact>
+        <skillSet></skillSet>
+        <availability>
+            <date></date>
+            <status>
+                <booked></booked>
+                <holiday></holiday>
+            </status>
+        </availability>
+
+    </fullTime>
+    <contractor>
+        <name></name>
+        <title></title>
+        <address></address>
+        <contact></contact>
+        <skillSet></skillSet>
+        <availability>
+            <date></date>
+            <status>
+                <booked></booked>
+                <holiday></holiday>
+            </status>
+        </availability>
+    </contractor>
+</instructorTeam>

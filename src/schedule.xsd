@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:catalog="http://www.w3.org/catalog">
+  <xs:import namespace="http://www.w3.org/catalog" schemaLocation="catalog.xsd"/>
+    <xs:element name="enrollmentCourses">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="entry"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="entry">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="course" type="catalog:"/>
+                <xs:element ref="date"/>
+                <xs:element ref="instructor"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="courses">
+        <xs:complexType>
+            <xs:attribute name="id" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="date">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="instructor">
+        <xs:complexType/>
+    </xs:element>
+</xs:schema>

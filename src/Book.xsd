@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="Library">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Book"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Book">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Title"/>
+                <xs:element ref="Author"/>
+                <xs:element ref="Description"/>
+                <xs:element ref="Pubdate"/>
+                <xs:element ref="Publisher"/>
+                <xs:element ref="Cost"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Title" type="xs:string"/>
+    <xs:element name="Author" type="xs:NCName"/>
+    <xs:element name="Description" type="xs:string"/>
+    <xs:element name="Pubdate">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="Publisher">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="Cost">
+        <xs:complexType/>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<courses>
+    <courseTitle></courseTitle>
+    <duration></duration>
+    <prerequisites></prerequisites>
+    <subject></subject>
+    <mode>
+        <lectures></lectures>
+        <practicals></practicals>
+        <seminar></seminar>
+        <mixed></mixed>
+    </mode>
+    <description></description>
+    <price></price>
+
+</courses>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.w3.org/catalog"
+           xmlns="http://www.w3.org/catalog"
+           elementFormDefault="qualified">
+    <xs:element name="courses">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="courseTitle"/>
+                <xs:element ref="duration"/>
+                <xs:element ref="prerequisites"/>
+                <xs:element ref="subject"/>
+                <xs:element ref="mode"/>
+                <xs:element ref="description"/>
+                <xs:element ref="price"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="courseTitle">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="duration">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="prerequisites">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="subject">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="mode">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="lectures"/>
+                <xs:element ref="practicals"/>
+                <xs:element ref="seminar"/>
+                <xs:element ref="mixed"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="lectures">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="practicals">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="seminar">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="mixed">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="description">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="price">
+        <xs:complexType/>
+    </xs:element>
+</xs:schema>

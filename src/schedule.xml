@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<enrollmentCourses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="schedule.xsd">
+    <entry>
+        <course id = "101"></course>
+        <date></date>
+        <instructor></instructor>
+    </entry>
+</enrollmentCourses>

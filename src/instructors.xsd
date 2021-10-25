@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="instructorTeam">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fullTime"/>
+                <xs:element ref="contractor"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="fullTime">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+                <xs:element ref="title"/>
+                <xs:element ref="address"/>
+                <xs:element ref="contact"/>
+                <xs:element ref="skillSet"/>
+                <xs:element ref="availability"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="contractor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+                <xs:element ref="title"/>
+                <xs:element ref="address"/>
+                <xs:element ref="contact"/>
+                <xs:element ref="skillSet"/>
+                <xs:element ref="availability"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="name">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="title">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="address">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="contact">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="skillSet">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="availability">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="date"/>
+                <xs:element ref="status"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="date">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="status">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="booked"/>
+                <xs:element ref="holiday"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="booked">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="holiday">
+        <xs:complexType/>
+    </xs:element>
+</xs:schema>
